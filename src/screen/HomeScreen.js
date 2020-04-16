@@ -1,7 +1,11 @@
 
 import React from "react"
-import {}   
+import {Button} from "react-native"
+import {useNavigation} from '@react-navigation/native'
 
 export default () => {
-    return <Text>123</Text>
+    const navigation = useNavigation()
+    return <Button title="OK" onPress={(a, b)=> {
+        navigation.navigate("Home2")
+    }}/>
 }
